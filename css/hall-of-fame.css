@@ -1,0 +1,60 @@
+body{
+  overflow-x: hidden;
+  background-color: rgba(221,114,48,0.9);
+}
+
+.content{
+  margin: 15px 5px;
+}
+.header{
+  z-index: 1;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "levo desno";
+}
+
+.prva{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+
+.druga{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5px;
+  padding-right: 10px;
+}
+
+img{
+  width:100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  opacity: 0.85;
+}
+img:hover{
+  opacity: 1;
+}
+.dzinovic{
+  border-radius: 20px;
+}
+
+@media only screen and (max-width:779px){
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .prva{
+    width: 97%;
+  }
+  .druga{
+    width: 97%;
+  }
+}

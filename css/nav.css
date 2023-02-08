@@ -1,0 +1,267 @@
+body{
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    grid-template-rows: 15vh auto;
+    grid-template-areas:
+    "header"
+    "content";
+}
+
+.content{
+    grid-area: content;
+}
+
+.header{
+    grid-area: header ;
+    display: flex;
+    flex-direction: row;
+    height:15vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(45deg, rgba(133,77,39,1) 0%, rgba(221,114,48,1) 20%, rgba(244,201,93,1) 100%);
+    border-bottom:2px solid saddlebrown;
+}
+
+
+/* NAVBAR */
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:100%;
+    width: 100%;
+}
+
+.nav-logo{
+    width: 180px;
+    padding-left:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2.5rem;
+}
+
+.nav-logo:hover{
+    border-bottom: 2px solid saddlebrown;
+    cursor:pointer;
+}
+
+.nav-logo:hover a{
+    color:#c03d0a;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    text-decoration: none;
+    color:white;
+    word-spacing: 5px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.3rem;
+}
+
+.nav-a-link{
+    display: flex;
+    text-decoration: none;
+    color:white;
+    width:100%;
+    height:100%;
+    align-items: center;
+    padding:0 40px;
+}
+
+.nav-a-link:hover{
+    background-color: rgba(132, 132, 132,0.1);
+    border-bottom: 3px solid saddlebrown;
+    cursor:pointer;
+}
+
+.nav-link:hover a{
+    color:#c95b2f;
+}
+
+
+
+
+
+.boja-logo{
+    color:#c03d0a;
+}
+
+
+.boja-trenutne-stranice{
+    color:#c95b2f !important;
+}
+
+/* BURGER */
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    font-size: 40px;
+    color:white;
+}
+
+.burger:hover{
+    background-color: rgba(28,10,0,0.05);
+    color:#c95b2f;
+    cursor: pointer;
+}
+
+.burger-menu{
+    display:none;
+    height:30vh - 4px;
+    width:100%;
+}
+
+
+.burger-ul{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-li{
+    height:25%;
+    width:100%;
+}
+
+.burger-div{
+    width:100%;
+    margin:0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid saddlebrown;
+}
+
+.burger-div:hover{
+    background-color: rgba(132, 132, 132,0.1);
+    cursor:pointer;
+}
+
+.burger-div:hover a{
+    color:#c95b2f;
+}
+
+.burger-recenzije-border{
+    border:0;
+}
+
+.burger-link{
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+
+.burger-link-boja{
+    color:c95b2f;
+}
+
+
+
+/* Responzivnost za laptop i tablet */
+@media screen and (min-width: 811px) {
+    .burger{
+        display:none;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .header{
+        height:15vh;
+    }
+
+    .content{
+        height:calc(85vh - 2px);
+    }
+
+    
+}
+
+
+/* Responzivnost za telefon */
+@media screen and (max-width: 810px) {
+    .header{
+        display: grid;
+        grid-template-rows: 15vh auto;
+        grid-template-areas:
+        "nav"
+        "burgerMeni"
+    }
+
+    .header-veci{
+        height: 45vh;
+    }
+
+    .container-veci{
+        grid-template-rows: calc(45vh + 2px) auto;
+    }
+
+    .nav-bar{
+        border-bottom: 2px solid saddlebrown;
+    }
+
+    .burger-menu-clicked{
+        grid-area: burgerMeni;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "oNama"
+        "meni"
+        "hof"
+        "recenzije";
+    }
+
+    .burger-lista-o-nama{
+        grid-area: oNama;
+    }
+    
+    .burger-lista-meni{
+        grid-area: meni;
+    }
+
+    .burger-lista-hall-of-fame{
+        grid-area: hof;
+    }
+
+    .burger-lista-recenzije{
+        grid-area: recenzije;
+    }
+
+    .nav-menu{
+        display:none;
+    }
+    
+    .content-veci{
+        height:55vh;
+    }
+}

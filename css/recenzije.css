@@ -1,0 +1,521 @@
+body{
+    background-color: #EB8942;
+    overflow-x: hidden;
+    width:100vw;
+}
+
+.content{
+    background-color: #EB8942;
+    width:100%;
+    height:100%;
+    font-size: 17px;
+}
+
+.content-forma{
+    background-color: rgba(244,201,93,0.5);
+    width:750px;
+    margin:15px auto;
+    border-radius: 40px;
+    box-shadow: 30px 20px rgba(0,0,0,0.15);
+    border:2px solid saddlebrown;
+    color:#04030f;
+}
+
+.forma{
+    width:100%;
+    margin-top:40px;
+    display: grid;
+    grid-template-areas: 
+    "prviRed"
+    "medjuRed"
+    "drugiRed"
+    "treciRed"
+    "cetvrtiRed"
+    "dugme";
+}
+
+/* PRVI RED */
+
+.prvi-red{
+    background-color: rgba(244,201,93,0.9);
+    border-top:1px solid saddlebrown;
+    border-bottom:1px solid saddlebrown;
+    justify-items: left;
+}
+
+.ime-forma{
+    grid-area: ime;
+    border-right:1px solid saddlebrown;
+    width: 100%;
+}
+
+.prvadva-div{
+    padding:15px 0 20px 50px;
+    line-height: 2;
+}
+
+.prezime-forma{
+    grid-area:prezime;
+    width:100%;
+}
+
+
+/* IZMEDJU PRVOG I DRUGOG */
+
+
+.prvimedj-red{
+    background-color: rgba(244,201,93,0.9);
+    border-bottom:1px solid saddlebrown;
+    justify-items: left;
+}
+
+.email-forma{
+    grid-area: email;
+    border-right:1px solid saddlebrown;
+    width: 100%;
+}
+
+
+.telefon-forma{
+    grid-area:telefon;
+    width:100%;
+}
+
+.polje-forme-tekst{
+    width:80%;
+    border: 1px solid saddlebrown;
+    border-radius:15px;
+    height:30px;
+    padding:0 20px 1px;
+    color: rgba(0,0,0,0.5);
+    font-size:15px;
+}
+
+.polje-forme-tekst:hover{
+    border: 2px solid saddlebrown;
+    box-shadow: 3px 4px rgba(0,0,0,0.15);
+}
+
+.polje-forme-tekst:focus{
+    border: 3px solid saddlebrown;
+    box-shadow: 4px 5px rgba(0,0,0,0.15);
+    outline: 0;
+}
+
+
+/* DRUGI RED */
+
+.drugi-red{
+    background-color: rgba(244,201,93,0.9);
+    border-bottom:1px solid saddlebrown;
+}
+
+.drugi-red-datum{
+    grid-area: datum;
+    width:100%;
+    display:grid;
+    grid-template-rows:1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "gornjiDatum gornjiDatum gornjiDatum"
+    "danDatum mesecDatum godinaDatum";
+    border-right:1px solid saddlebrown;
+    align-items: center;
+}
+
+.drugi-red-levo-gore{
+    grid-area: gornjiDatum;
+    width:100%;
+    text-align: center;
+}
+
+.drugi-dan{
+    width:100%;
+    grid-area: danDatum;
+}
+
+.datum-div{
+    text-align: center;
+    line-height: 2;
+    padding:5px 0 15px;
+}
+
+.drugi-mesec{
+    width:100%;
+    grid-area: mesecDatum;
+}
+
+.drugi-godina{
+    width:100%;
+    grid-area: godinaDatum;
+}
+
+.drugi-red-pol{
+    grid-area:pol;
+    width:100%;
+    display: grid;
+    grid-template-areas: 
+    "pol"
+    "polRadio";
+    grid-template-rows: 1fr 2fr;
+}
+
+.drugi-desno-gore{
+    grid-area: pol;
+    width:100%;
+    text-align:center;
+}
+
+.drugi-desno-gore div{
+   padding:25px 0 0;
+}
+
+.forma-drugiRed{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1.5vh;
+}
+
+.datum-input{
+    width:70px;
+    height:30px;
+    padding:3px 5px 3px 15px;
+    border: 1px solid saddlebrown;
+    border-radius:15px;
+    outline:0;
+}
+
+.datum-input:hover{
+    border: 2px solid saddlebrown;
+    box-shadow:3px 4px rgba(0,0,0,0.15);
+}
+
+.datum-input:focus{
+    border: 3px solid saddlebrown;
+    box-shadow:4px 5px rgba(0,0,0,0.15);
+}
+
+.drugi-desno-dole{
+    grid-area: polRadio;
+    font-size: 16px;
+}
+
+
+
+/* TRECI RED */
+
+.treci-red{
+    grid-area: treciRed;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color:rgba(244,201,93,0.9);
+    border-bottom:1px solid saddlebrown;    
+}
+
+.treci-red-gore{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin:15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.treci-red-dole{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.naziv-ocene{
+    margin:10px 0;
+    text-align: center;
+}
+
+.treci-red-ocene{
+    width:20%;
+    padding:0 15px 20px;
+}
+
+.ocena-radio{
+    text-align: center;
+}
+
+.treci-red-ocene input{
+    margin:5px 10px 5px 0;
+}
+
+/* CETVRTI RED */
+
+.cetvrti-red{
+    width:100%;
+    background-color: rgba(244,201,93,0.9);
+    border-bottom:1px solid saddlebrown;
+}
+
+.cetvrti-red-levo{
+    grid-area: cetvrtiLevo;
+    width:100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "kontaktNacin"
+    "checkBox";
+}
+
+.cetvrti-red-levo-gore{
+    grid-area: kontaktNacin;
+    text-align: center;
+}
+
+.cetvrti-red-levo-gore div{
+    padding:50px 20px 0;
+}
+
+
+.cetvrti-red-levo-dole{
+    grid-area: checkBox;
+    width: 100%;
+}
+
+.cetvrti-red-levo-dole div{
+    padding:25px 0 0 50px;
+}
+
+.cetvrti-red-levo-dole input{
+    margin:7px 7px;
+}
+
+.cetvrti-red-desno{
+    grid-area:cetvrtiDesno;
+    width:100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "tekstRecenzija"
+    "textArea";
+}
+
+.cetvrti-red-desno-gore{
+    grid-area: tekstRecenzija;
+    font-size:18px;
+    letter-spacing: 1px;
+    border-left: 1px solid saddlebrown;
+    text-align: center;
+}
+
+.cetvrti-red-desno-gore div{
+    padding:25px 0;
+}
+
+.cetvrti-red-desno-dole{
+    grid-area: textArea;
+    width:100%;
+    text-align:center;
+    border-left: 1px solid saddlebrown;
+}
+
+.cetvrti-red-desno-dole div{
+    padding:0 0 20px;
+}
+
+
+.cetvrti-red-desno-dole textarea{
+    width:425px;
+    height:20vh;
+    border-radius:15px;
+    outline:0;
+    border:1px solid saddlebrown;
+    padding:15px;
+    font-size: 15px;
+    color:black;
+    resize: none;
+}
+
+.cetvrti-red-desno-dole textarea:focus{
+    outline: 0;
+    border:2px solid saddlebrown;
+    box-shadow: 6px 8px rgba(0,0,0,0.15);
+}
+
+/* PETI RED */
+
+.dugme-forma{
+    grid-area: dugme;
+    width:100%;
+    text-align: center;
+}
+
+.dugme-forma div{
+    padding:15px;
+}
+
+.dugme-forma button{
+    width:30vh;
+    height:10vh;
+    outline:0;
+    border: 1px solid saddlebrown;
+    border-radius:10px;
+    font-size:1.9rem;
+    color:white;
+    background-color:saddlebrown;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.dugme-forma button:hover{
+    color:saddlebrown;
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid saddlebrown;
+    box-shadow: 4px 6px rgba(0,0,0,0.15);
+}
+
+/* RESPONZIVNOST ZA TABLET I RACUNAR */
+@media screen and (min-width: 790px) {
+
+    .prvi-red{
+        grid-area: prviRed;
+        display: grid;
+        grid-template-areas: "ime prezime";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prvimedj-red{
+        grid-area: medjuRed;
+        display: grid;
+        grid-template-areas: "email telefon";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drugi-red{
+        grid-area: drugiRed;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "datum pol";
+    }
+
+    .cetvrti-red{
+        grid-area: cetvrtiRed;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "cetvrtiLevo cetvrtiDesno";
+    }
+
+    .treci-red{
+        grid-area: treciRed;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .drugi-desno-dole div{
+        padding:15px 0 0 150px;
+        line-height: 2;
+    }
+}
+
+
+
+/* RESPONZIVNOST ZA TELEFON */
+
+@media screen and (max-width: 790px) {
+    .content-forma{
+        width:95%;
+        margin:15px 15px;
+    }
+    .prvi-red{
+        grid-area: prviRed;
+        display: grid;
+        grid-template-areas: 
+        "ime" 
+        "prezime";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .polje-forme-tekst{
+        width:70vw;
+    }
+
+    .prvimedj-red{
+        grid-area: medjuRed;
+        display: grid;
+        grid-template-areas: 
+        "email" 
+        "telefon";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .drugi-red{
+        grid-area: drugiRed;
+        display: grid;
+        grid-template-rows: 200px 150px;
+        grid-template-areas: 
+        "datum"
+        "pol";
+    }
+
+    .drugi-desno-dole{
+        text-align:center;
+    }
+
+    .cetvrti-red{
+        grid-area: cetvrtiRed;
+        display: grid;
+        grid-template-rows: 200px 300px;
+        grid-template-areas: 
+        "cetvrtiLevo"
+        "cetvrtiDesno";
+    }    
+
+    .drugi-desno-dole div{
+        padding:15px 0 0 0;
+        line-height: 2;
+    }
+}
+
+/* RESPONZIVNOST ZA NAJMANJE */
+
+@media screen and (max-width: 500px) {
+    
+    .drugi-red{
+        grid-template-rows: 300px 150px;
+    }
+
+    .drugi-red-datum{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "gornjiDatum gornjiDatum gornjiDatum"
+        "danDatum danDatum danDatum"
+        "mesecDatum mesecDatum mesecDatum"
+        "godinaDatum godinaDatum godinaDatum";
+        border-bottom: 1px solid saddlebrown;
+        height:300px;
+    }
+
+    .drugi-red-datum div{
+        width:100%;
+        text-align:center
+    }
+
+    .drugi-red-pol{
+        height:150px;
+        border-bottom: 1px solid saddlebrown;
+    }
+
+    .treci-red-dole{
+        flex-direction: column;
+    }
+
+    .treci-red-ocene{
+        width:100%;
+    }
+
+    .cetvrti-red-desno-dole textarea{
+        width:75vw;
+    }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzije - Kafana Jao</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/recenzije.css">
+    <link rel="shortcut icon" href="img/fnk2.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bf4bc345b8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <a class="logo" href="index.html">
+                        <i class="fa-solid fa-utensils"></i> JAO
+                    </a>
+                </div>
+                
+                <div class="nav-menu">
+                    
+                    <div class="nav-link">
+                        <a href="o-nama.html" class="link-o-nama nav-a-link">O nama</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="meni.html" class="link-meni nav-a-link">Meni</a>
+                    </div>
+                    
+                    <div class="nav-link">
+                        <a href="hall-of-fame.html" class="link-hall-of-fame nav-a-link">Hall of fame</a>
+                    </div>
+    
+                    <div class="nav-link">
+                        <a href="recenzije.html" class="link-recenzije nav-a-link">Recenzije</a>
+                    </div>
+                </div>
+
+                <div class="burger nav-link">
+                    <i class="fa-solid fa-bars" id="ikonica-burger"></i>
+                </div>
+            </div>
+
+            
+            <div class="burger-menu">
+                <div class="burger-div burger-lista-o-nama">
+                    <a class="burger-link burger-o-nama" href="o-nama.html">O nama</a>
+                </div>
+
+                <div class="burger-div burger-lista-meni">
+                    <a class="burger-link burger-meni" href="meni.html">Meni</a>
+                </div>
+
+                <div class="burger-div burger-lista-hall-of-fame">
+                    <a class="burger-link burger-hall-of-fame" href="hall-of-fame.html">Hall of fame</a>
+                </div>
+
+                <div class="burger-div burger-lista-recenzije">
+                    <a class="burger-link burger-recenzije" href="recenzije.html">Recenzije</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-forma">
+                <form action="">
+                    <div class="forma">
+                        <div class="prvi-red">
+                            <div class="ime-forma">
+                                <div class="prvadva-div">
+                                    <label for="ime">Ime:</label> <br>
+                                    <input class="polje-forme-tekst" type="text" name="ime" placeholder="Ime" id="polje-ime">
+                                </div>
+                            </div>
+
+                            <div class="prezime-forma">
+                               <div class="prvadva-div">
+                                    <label for="ime">Prezime:</label> <br>
+                                    <input class="polje-forme-tekst" type="text" name="prezime" placeholder="Prezime" id="polje-prezime">
+                               </div>
+                            </div>
+                        </div>
+    
+                        <div class="prvimedj-red">
+                            <div class="email-forma">
+                               <div class="prvadva-div">
+                                    <label for="email">E-mail:</label> <br>
+                                    <input class="polje-forme-tekst" type="text" name="email" placeholder="E-mail" id="polje-email">
+                               </div>
+                            </div>
+                            <div class="telefon-forma">
+                                <div class="prvadva-div">
+                                    <label for="telefon">Broj telefona:</label> <br>
+                                    <input class="polje-forme-tekst" type="tel" name="telefon" placeholder="+(381)-(000)-(0000)" id="polje-telefon">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="drugi-red">
+                            <div class="drugi-red-datum">
+
+                                <div class="drugi-red-levo-gore">
+                                    Datum posete:
+                                </div>
+
+                                <div class="drugi-dan">
+                                    <div class="datum-div">
+                                        <label for="ime">Dan</label> <br>
+                                        <input class="datum-input" type="number" name="ime" value="1" min="1" max="31" id="polje-dan">
+                                    </div>
+                                </div>
+
+                                <div class="drugi-mesec">
+                                    <div class="datum-div">
+                                        <label for="ime">Mesec</label> <br>
+                                        <input class="datum-input" type="number" name="ime" value="1" min="1" max="12" id="polje-mesec">
+                                    </div>
+                                </div>
+
+                                <div class="drugi-godina">
+                                    <div class="datum-div">
+                                        <label for="ime">Godina</label> <br>
+                                        <input class="datum-input" type="number" name="ime" value="2022" min="2000" max="2030" id="polje-godina">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="drugi-red-pol">
+                                <div class="drugi-desno-gore">
+                                    <div>
+                                        POL:
+                                    </div>
+                                </div>
+
+
+        
+                                <div class="drugi-desno-dole">
+                                    <div>
+                                        <input type="radio" name="pol" value="Muski" checked><label for="pol">Muski</label> <br>
+                                        <input type="radio" name="pol" value="Zenski"><label for="pol">Zenski</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="treci-red">
+                            <div class="treci-red-gore">
+                                Ocene:
+                            </div>
+        
+                            <div class="treci-red-dole">
+                                <div class="treci-red-ocene">
+                                    <div class="naziv-ocene">
+                                        Hrana:
+                                    </div>
+        
+                                    <div class="ocena-radio">
+                                        <input type="radio" name="hrana" value="5" checked><label for="hrana">5</label> <br>
+                                        <input type="radio" name="hrana" value="4"><label for="hrana">4</label> <br>
+                                        <input type="radio" name="hrana" value="3"><label for="hrana">3</label> <br>
+                                        <input type="radio" name="hrana" value="2"><label for="hrana">2</label> <br>
+                                        <input type="radio" name="hrana" value="1"><label for="hrana">1</label> <br>
+                                    </div>
+                                </div>
+        
+                                <div class="treci-red-ocene">
+                                    <div class="naziv-ocene">
+                                        Objekat:
+                                    </div>
+        
+                                    <div class="ocena-radio">
+                                        <input type="radio" name="objekat" value="5" checked><label for="objekat">5</label> <br> 
+                                        <input type="radio" name="objekat" value="4"><label for="objekat">4</label> <br>
+                                        <input type="radio" name="objekat" value="3"><label for="objekat">3</label> <br>
+                                        <input type="radio" name="objekat" value="2"><label for="objekat">2</label> <br>
+                                        <input type="radio" name="objekat" value="1"><label for="objekat">1</label> <br>
+                                    </div>
+                                </div>
+        
+                                <div class="treci-red-ocene">
+                                    <div class="naziv-ocene">
+                                        Lokacija:
+                                    </div>
+        
+                                    <div class="ocena-radio">
+                                        <input type="radio" name="lokacija" value="5" checked><label for="lokacija">5</label> <br>
+                                        <input type="radio" name="lokacija" value="4"><label for="lokacija">4</label> <br>
+                                        <input type="radio" name="lokacija" value="3"><label for="lokacija">3</label> <br>
+                                        <input type="radio" name="lokacija" value="2"><label for="lokacija">2</label> <br>
+                                        <input type="radio" name="lokacija" value="1"><label for="lokacija">1</label> <br>
+                                    </div>
+                                </div>
+        
+                                <div class="treci-red-ocene">
+                                    <div class="naziv-ocene">
+                                        Gostoprimstvo:
+                                    </div>
+        
+                                    <div class="ocena-radio">
+                                        <input type="radio" name="gostoprimstvo" value="5" checked><label for="gostoprimstvo">5</label> <br>
+                                        <input type="radio" name="gostoprimstvo" value="4"><label for="gostoprimstvo">4</label> <br>
+                                        <input type="radio" name="gostoprimstvo" value="3"><label for="gostoprimstvo">3</label> <br>
+                                        <input type="radio" name="gostoprimstvo" value="2"><label for="gostoprimstvo">2</label> <br>
+                                        <input type="radio" name="gostoprimstvo" value="1"><label for="gostoprimstvo">1</label> <br>
+                                    </div>
+                                </div>
+        
+                                <div class="treci-red-ocene">
+                                    <div class="naziv-ocene">
+                                        Izbor hrane:
+                                    </div>
+        
+                                    <div class="ocena-radio">
+                                        <input type="radio" name="izbor-hrane" value="5" checked><label for="izbor-hrane">5</label> <br>
+                                        <input type="radio" name="izbor-hrane" value="4"><label for="izbor-hrane">4</label> <br>
+                                        <input type="radio" name="izbor-hrane" value="3"><label for="izbor-hrane">3</label> <br>
+                                        <input type="radio" name="izbor-hrane" value="2"><label for="izbor-hrane">2</label> <br>
+                                        <input type="radio" name="izbor-hrane" value="1"><label for="izbor-hrane">1</label> <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cetvrti-red">
+                            <div class="cetvrti-red-levo">
+                                <div class="cetvrti-red-levo-gore">
+                                    <div>
+                                        Izaberite nacin da Vas kontaktiramo:
+                                    </div>
+                                </div>
+    
+                                <div class="cetvrti-red-levo-dole">
+                                    <div class="tip-kontakta">
+                                        <input type="checkbox" name="email" value="Email"><label for="email">E-mail</label> <br>
+                                        <input type="checkbox" name="whatsapp" value="Whatsapp"><label for="whatsapp">Whatsapp</label> <br>
+                                        <input type="checkbox" name="viber" value="Viber"><label for="viber">Viber</label> <br>
+                                        <input type="checkbox" name="telegram" value="Telegram"><label for="telegram">Telegram</label> <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cetvrti-red-desno">
+                                <div class="cetvrti-red-desno-gore">
+                                    <div>
+                                        Ostavite recenziju:
+                                    </div>
+                                </div>
+    
+                                <div class="cetvrti-red-desno-dole">
+                                    <div>
+                                        <textarea name="recenzija" id="polje-recenzija" cols="" rows=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dugme-forma">
+                            <div>
+                                <button type="Submit" id="dugme-potvrdi">Potvrdi</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script/recenzije.js"></script>
+    <script src="script/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(255,243,223,1) 33%, rgba(255,204,148,1) 66%, rgba(255,222,138,1) 100%);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "sredina slike"
+    "footer1 footer2"
+    "copyright copyright";
+}
+
+.header{
+    grid-area: header;
+    grid-column:1 / span4;
+}
+
+
+.sredina{
+    padding:5px 10px;
+    grid-area: sredina;
+    text-align: left;
+}
+.sredina a{
+    color: #854d27;
+}
+
+/* GALERIJA PROSTORA */
+.slike{
+    grid-area: slike;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "slika1 slika2"
+    "slika3 slika4";
+}
+
+/* SLIKE */
+.boks1{
+    grid-area: slika1;
+    align-self: end;
+    height: 100%;
+}
+
+.boks2{
+    grid-area: slika2;
+    align-self: end;
+    margin-left: 5px;
+    height: 100%;
+
+
+}
+
+.boks3{
+    grid-area: slika3;
+    align-self: start;
+    height: 100%;
+
+}
+
+.boks4{
+    grid-area: slika4;
+    margin-left: 5px;
+    align-self: start;
+    height: 100%;
+}
+
+.on{
+    margin-top: 5px;
+    width: 100%;
+    height: 99%;
+}
+
+.footer1{
+    grid-area: footer1;
+    text-align: center;
+    background-color: #854d27;
+    color: white;
+    margin-top: 5px;
+
+}
+
+.footer2{
+    margin-top: 5px;
+    grid-area:footer2;
+    text-align: center;
+    background-color: #854d27;
+    color: white;
+}
+.footer1 a{
+    color: white;
+}
+
+.footer2 a {
+    color: white;
+}
+
+.lokacija-tekst{
+    color: white;
+}
+
+.cpr{
+    grid-area: copyright;
+    text-align: center;
+    background-color: #854d27;
+    color: white;
+    display: grid;
+} 
+.cpr p{
+    bottom: 0;
+    align-self: end;
+}
+.fa-envelope{
+    margin-right: 5px;
+}
+
+.flinkovi{
+    color:white;
+    word-spacing: 10px;
+    margin-left: 7px;
+}
+
+.footer2 span:hover a{
+    color:rgba(221,114,48,1);
+}
+
+.footer2 span:hover{
+    color:rgba(221,114,48,1);
+    cursor:pointer;
+}
+
+
+.hof a:visited{
+    color:black;
+}
+
+.hof a:hover{
+    color:gray;
+}
+
+.hof a:active{
+    color:rgb(0,0,0,0.8);
+}
+
+/* RESPONZIVNOST */
+@media (max-width: 600px) {
+    .content{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+    "sredina"
+    "slike"
+    "footer1"
+    "footer2"
+    "copyright";
+    } 
+    .slike{
+        width:100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "slika1"
+        "slika2"
+        "slika3"
+        "slika4";
+    }
+    .boks{
+        margin: 0;
+    }
+    .donjiBoks{
+        margin: 0;
+    }
+    .footer1{
+        margin-top: 5px;
+    }
+  }
+   @media (600px <= width <= 900px) {
+    .content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+    "sredina sredina"
+    "slike slike"
+    "footer1 footer2"
+    "copyright copyright";
+    } 
+  } 
+  @media (min-width:900px){
+   .sredina{
+    font-size: 1.6vmax;
+}
+}
